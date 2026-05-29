@@ -23,6 +23,10 @@ modded class VehicleControllerComponent : BaseVehicleControllerComponent
 		else 
 			gameElapsedTime = float.MAX;
 		
+		SAS_FreezetimeConfig config = SAS_FreezetimeConfig.Get();
+		if (config)
+			m_iFreezeTime = config.m_iFreezeTime;
+		
 		//Set total minimum time to StartVehicles
 		if(gameElapsedTime < m_iFreezeTime)
 			return false;

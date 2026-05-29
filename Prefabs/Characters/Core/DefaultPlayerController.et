@@ -6,6 +6,7 @@ SCR_PlayerController {
     SAS_HUD "{69211A963C98EA0B}" {
      m_LayoutPath "{A939B1B8A9C75BAA}UI/layouts/Menus/HUD/SAS_HUD.layout"
      m_eLayer OVERLAY
+     m_eShow 7
     }
    }
   }

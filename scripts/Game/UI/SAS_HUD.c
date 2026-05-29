@@ -23,8 +23,6 @@ class SAS_HUD : SCR_InfoDisplayExtended
 	protected int m_iFreezeTime = 300;
 	protected string m_sSound = SCR_SoundEvent.SOUND_SIREN;
 	
-	protected ref SCR_SortedArray<SCR_Faction> m_SortedFactions = new SCR_SortedArray<SCR_Faction>();
-	
 	// Setters
 	protected bool m_bInitDone = false;
 	
@@ -46,6 +44,15 @@ class SAS_HUD : SCR_InfoDisplayExtended
 			return;
 		
 		m_bInitDone = true;		
+		
+		SAS_FreezetimeConfig config = SAS_FreezetimeConfig.Get();
+		if (config)
+		{
+			m_fNotifDuration = config.m_fNotifDuration;
+			m_fNotifOpacityShown = config.m_fNotifOpacityShown;
+			m_iFreezeTime = config.m_iFreezeTime;
+			m_sSound = config.m_sSound;
+		}
 		
 		if(!m_wRoot){
 			SAS_Logs.Error("[SAS_HUD]", "Fatal Error, w_root is not set");
