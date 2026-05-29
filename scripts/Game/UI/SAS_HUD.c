@@ -9,6 +9,8 @@ class SAS_HUD : SCR_InfoDisplayExtended
 	protected SizeLayoutWidget m_wNotificationStart;
 	protected RichTextWidget m_wTimeLeft;
 	protected RichTextWidget m_wPlayerCount;
+	protected RichTextWidget m_wTimeLeftEnd;
+	protected RichTextWidget m_wPlayerCountEnd;
 	protected SizeLayoutWidget m_wNotificationEnd;
 	protected ImageWidget m_wProgressBar;
 	protected SCR_FadeUIComponent m_FadeComponentStart;
@@ -68,6 +70,9 @@ class SAS_HUD : SCR_InfoDisplayExtended
 		m_wTimeLeft = RichTextWidget.Cast(m_wNotificationStart.FindAnyWidget("m_wRemTime"));
 		m_wPlayerCount = RichTextWidget.Cast(m_wNotificationStart.FindAnyWidget("m_wPlayerCount"));
 		m_wProgressBar = ImageWidget.Cast(m_wNotificationStart.FindAnyWidget("progressBar"));
+		
+		m_wTimeLeftEnd = RichTextWidget.Cast(m_wNotificationEnd.FindAnyWidget("m_wRemTimeEnd"));
+		m_wPlayerCountEnd = RichTextWidget.Cast(m_wNotificationEnd.FindAnyWidget("m_wPlayerCountEnd"));
 		
 		if(!m_wTimeLeft && !m_wPlayerCount)
 		{
@@ -172,15 +177,23 @@ class SAS_HUD : SCR_InfoDisplayExtended
 		if (!factionScripted)
 			return;	
 		
-		if (!m_wPlayerCount)
-			return;
-		
 		int playerLimit = factionScripted.GetPlayerLimit();
 		
-		if (playerLimit > 0)
-			m_wPlayerCount.SetTextFormat("#AR-SupportStation_ActionFormat_ItemAmount", playerCountParam, playerLimit);
-		else
-			m_wPlayerCount.SetText(playerCountParam.ToString());
+		if (m_wPlayerCount)
+		{
+			if (playerLimit > 0)
+				m_wPlayerCount.SetTextFormat("#AR-SupportStation_ActionFormat_ItemAmount", playerCountParam, playerLimit);
+			else
+				m_wPlayerCount.SetText(playerCountParam.ToString());
+		}
+		
+		if (m_wPlayerCountEnd)
+		{
+			if (playerLimit > 0)
+				m_wPlayerCountEnd.SetTextFormat("#AR-SupportStation_ActionFormat_ItemAmount", playerCountParam, playerLimit);
+			else
+				m_wPlayerCountEnd.SetText(playerCountParam.ToString());
+		}
 	}
 	
 	// - Start Tick  Initial LayoutLoad
@@ -228,6 +241,8 @@ class SAS_HUD : SCR_InfoDisplayExtended
 			float currentTime = Math.Floor(m_iFreezeTime - gameRunTime);
 			if (m_wTimeLeft)
 				m_wTimeLeft.SetText(SCR_FormatHelper.FormatTime(currentTime));					
+			if (m_wTimeLeftEnd)
+				m_wTimeLeftEnd.SetText(SCR_FormatHelper.FormatTime(currentTime));
 			if (m_wProgressBar)
 				m_wProgressBar.SetSize(calcProgressBar(currentTime), 5);			
 			GetGame().GetCallqueue().CallLater(UpdateFreezeTimeDisplay, 1000, false);

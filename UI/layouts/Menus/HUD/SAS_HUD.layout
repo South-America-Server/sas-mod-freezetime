@@ -386,7 +386,7 @@ FrameWidgetClass {
                  Size 28 28
                 }
                 RichTextWidgetClass "{6920E023106A168D}" {
-                 Name "RichText0"
+                 Name "m_wPlayerCountEnd"
                  Slot LayoutSlot "{6920E026D43779DA}" {
                   HorizontalAlign 2
                   VerticalAlign 1
@@ -500,7 +500,7 @@ FrameWidgetClass {
                  Size 28 28
                 }
                 RichTextWidgetClass "{6920E023106CDF5F}" {
-                 Name "RichText0"
+                 Name "m_wRemTimeEnd"
                  Slot LayoutSlot "{6920E026D43779DA}" {
                   HorizontalAlign 2
                   VerticalAlign 1
