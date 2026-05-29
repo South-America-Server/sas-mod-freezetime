@@ -1,0 +1,22 @@
+GameProject {
+ ID "SAS_Mod_Freezetime"
+ GUID "72C730A5F90B12DF"
+ TITLE "SAS_Mod_Freezetime"
+ Dependencies {
+  "58D0FB3206B6F859" "68612267A11B6990"
+ }
+ Configurations {
+  GameProjectConfig PC {
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig PS5 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

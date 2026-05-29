@@ -1,0 +1,13 @@
+SCR_PlayerController {
+ ID "1A9BA6BEFA06E3B1"
+ components {
+  SCR_HUDManagerComponent "{2FDC275D9EBCDB8B}" {
+   InfoDisplays {
+    SAS_HUD "{69211A963C98EA0B}" {
+     m_LayoutPath "{A939B1B8A9C75BAA}UI/layouts/Menus/HUD/SAS_HUD.layout"
+     m_eLayer OVERLAY
+    }
+   }
+  }
+ }
+}

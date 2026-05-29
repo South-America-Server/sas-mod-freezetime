@@ -1,0 +1,573 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ "Z Order" 1000
+ Color 0.9216 0.0252 0.0252 1
+ {
+  SizeLayoutWidgetClass "{6920E0248DC8A5B1}" {
+   Name "alertFrameStart"
+   Slot FrameWidgetSlot "{6920E0248DC8A5AD}" {
+    Anchor 0.5 0 0.5 0
+    PositionX -5
+    OffsetLeft -5
+    PositionY 200
+    OffsetTop 200
+    SizeX 550
+    OffsetRight -545
+    SizeY 90
+    OffsetBottom -290
+    Alignment 0.5 0.5
+   }
+   "Is Visible" 0
+   components {
+    SCR_FadeUIComponent "{692107566E88FB37}" {
+     m_fFadeInAnimationSpeed 0.5
+     m_fFadeOutAnimationSpeed 0.5
+    }
+   }
+   WidthOverride 550
+   AllowHeightOverride 1
+   HeightOverride 80
+   {
+    OverlayWidgetClass "{6920E0254F724C15}" {
+     Name "overFrame"
+     Slot AlignableSlot "{6920E0254F724C09}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      BlurWidgetClass "{6920E02538C370EB}" {
+       Name "blur"
+       Slot OverlayWidgetSlot "{6920E02538C370C5}" {
+       }
+      }
+      ImageWidgetClass "{6920E025346A2BA5}" {
+       Name "bg"
+       Slot OverlayWidgetSlot "{6920E025346A2B68}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.6939 0.6939 0.6939 1
+      }
+      VerticalLayoutWidgetClass "{6920E02527883500}" {
+       Name "body"
+       Slot OverlayWidgetSlot "{6920E025278834E0}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 10 10 10 10
+       }
+       {
+        HorizontalLayoutWidgetClass "{6920E0252FDF267C}" {
+         Name "header"
+         Slot LayoutSlot "{6920E0252FDF2648}" {
+         }
+         {
+          SizeLayoutWidgetClass "{6920E025975FBE32}" {
+           Name "groupPlayer"
+           Slot LayoutSlot "{6920E025975FBE2E}" {
+            HorizontalAlign 0
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 80
+           {
+            OverlayWidgetClass "{6920E0265A07A246}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              SmartPanelWidgetClass "{6920E026251EB1EA}" {
+               Name "bgSmart"
+               Slot OverlayWidgetSlot "{6920E026251EB1C6}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Opacity 0.4
+               Color 0 0 0 1
+               style rounded_4px
+              }
+              HorizontalLayoutWidgetClass "{6920E026E706DBA1}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+               }
+               {
+                ImageWidgetClass "{6920E026D04286E9}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                 }
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "squad"
+                 Size 28 28
+                }
+                RichTextWidgetClass "{6920E026D43779FD}" {
+                 Name "m_wPlayerCount"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 2
+                  VerticalAlign 1
+                  Padding 0 0 6 0
+                 }
+                 Text "23/64"
+                 "Font Size" 16
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          SizeLayoutWidgetClass "{6920E0258E6DB139}" {
+           Name "groupWarn"
+           Slot LayoutSlot "{6920E0258E6DB114}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 350
+           {
+            OverlayWidgetClass "{6920E0216FDA15DD}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              HorizontalLayoutWidgetClass "{6920E0216FDA9612}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+               }
+               {
+                ImageWidgetClass "{6920E0216FDA9614}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                 }
+                 Color 1 0 0 1
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "warning"
+                 Size 32 32
+                }
+                RichTextWidgetClass "{6920E0216FDA8765}" {
+                 Name "RichText0"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 2
+                  VerticalAlign 1
+                  Padding 0 0 6 0
+                 }
+                 Color 0 0 0 1
+                 Text "FREEZE TIME"
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          SizeLayoutWidgetClass "{6920E0258CE75691}" {
+           Name "groupTimer"
+           Slot LayoutSlot "{6920E0258CE7568B}" {
+            HorizontalAlign 2
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 100
+           {
+            OverlayWidgetClass "{6920E020A5AAD65A}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              SmartPanelWidgetClass "{6920E020A5AAD65B}" {
+               Name "bgSmart"
+               Slot OverlayWidgetSlot "{6920E026251EB1C6}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Opacity 0.4
+               Color 0 0 0 1
+               style rounded_4px
+              }
+              HorizontalLayoutWidgetClass "{6920E020A5AAD659}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               {
+                ImageWidgetClass "{6920E020A5AA9494}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                  HorizontalAlign 0
+                  Padding 5 0 0 0
+                 }
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "time"
+                 Size 28 28
+                }
+                RichTextWidgetClass "{6920E020A5AA9493}" {
+                 Name "m_wRemTime"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 1
+                  VerticalAlign 1
+                  SizeMode Fill
+                 }
+                 Text "03:00"
+                 "Font Size" 16
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        HorizontalLayoutWidgetClass "{6920E0252C1AF777}" {
+         Name "content"
+         Slot LayoutSlot "{6920E0252C1AF754}" {
+          HorizontalAlign 1
+          VerticalAlign 1
+          Padding 0 10 0 0
+         }
+         {
+          RichTextWidgetClass "{6920E026A50303CC}" {
+           Name "RichText0"
+           Slot LayoutSlot "{6920E026A50303D5}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Color 0 0 0 1
+           Text "Momento de preparação e organização dos times. Mantenha-se na MAIN BASE."
+           "Font Size" 16
+           "Min Font Size" 1
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{6920E02229E4B554}" {
+       Name "progressBarGroup"
+       Slot OverlayWidgetSlot "{6920E0296805F249}" {
+        HorizontalAlign 0
+        VerticalAlign 2
+       }
+       {
+        ImageWidgetClass "{6920E0222D5B2EDA}" {
+         Name "progressBar"
+         Slot OverlayWidgetSlot "{6920E0222D5B2EC7}" {
+          HorizontalAlign 0
+          VerticalAlign 3
+          Padding 0 0 0 0
+         }
+         "Z Order" 10
+         Color 1 0 0 1
+         Size 0 5
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  SizeLayoutWidgetClass "{6920E02310690DF1}" {
+   Name "alertFrameEnd"
+   Slot FrameWidgetSlot "{6920E0248DC8A5AD}" {
+    Anchor 0.5 0 0.5 0
+    PositionX -5
+    OffsetLeft -5
+    PositionY 200
+    OffsetTop 200
+    SizeX 550
+    OffsetRight -545
+    SizeY 90
+    OffsetBottom -290
+    Alignment 0.5 0.5
+   }
+   "Is Visible" 0
+   components {
+    SCR_FadeUIComponent "{692107565A9B60AF}" {
+     m_fFadeInAnimationSpeed 0.5
+     m_fFadeOutAnimationSpeed 0.5
+    }
+   }
+   WidthOverride 550
+   AllowHeightOverride 1
+   HeightOverride 80
+   {
+    OverlayWidgetClass "{6920E02310690DF2}" {
+     Name "overFrame"
+     Slot AlignableSlot "{6920E0254F724C09}" {
+      HorizontalAlign 3
+      VerticalAlign 3
+     }
+     {
+      BlurWidgetClass "{6920E023106931A1}" {
+       Name "blur"
+       Slot OverlayWidgetSlot "{6920E02538C370C5}" {
+       }
+      }
+      ImageWidgetClass "{6920E023106931A0}" {
+       Name "bg"
+       Slot OverlayWidgetSlot "{6920E025346A2B68}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+       }
+       Color 0.6939 0.6939 0.6939 1
+      }
+      VerticalLayoutWidgetClass "{6920E023106931A7}" {
+       Name "body"
+       Slot OverlayWidgetSlot "{6920E025278834E0}" {
+        HorizontalAlign 3
+        VerticalAlign 3
+        Padding 10 10 10 10
+       }
+       {
+        HorizontalLayoutWidgetClass "{6920E023106A8D1D}" {
+         Name "header"
+         Slot LayoutSlot "{6920E0252FDF2648}" {
+         }
+         {
+          SizeLayoutWidgetClass "{6920E023106A8D1C}" {
+           Name "groupPlayer"
+           Slot LayoutSlot "{6920E025975FBE2E}" {
+            HorizontalAlign 0
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 80
+           {
+            OverlayWidgetClass "{6920E023106A8FC5}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              SmartPanelWidgetClass "{6920E023106A8FC7}" {
+               Name "bgSmart"
+               Slot OverlayWidgetSlot "{6920E026251EB1C6}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Opacity 0.4
+               Color 0 0 0 1
+               style rounded_4px
+              }
+              HorizontalLayoutWidgetClass "{6920E023106A7C74}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+               }
+               {
+                ImageWidgetClass "{6920E023106A7C6B}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                 }
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "squad"
+                 Size 28 28
+                }
+                RichTextWidgetClass "{6920E023106A168D}" {
+                 Name "RichText0"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 2
+                  VerticalAlign 1
+                  Padding 0 0 6 0
+                 }
+                 Text "64/64"
+                 "Font Size" 16
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          SizeLayoutWidgetClass "{6920E023106A168C}" {
+           Name "groupWarn"
+           Slot LayoutSlot "{6920E0258E6DB114}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 370.5
+           {
+            OverlayWidgetClass "{6920E023106A3E2D}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              HorizontalLayoutWidgetClass "{6920E023106A3E2E}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+               }
+               {
+                ImageWidgetClass "{6920E023106B81A5}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                 }
+                 Color 1 0 0 1
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "warning"
+                 Size 32 32
+                }
+                RichTextWidgetClass "{6920E023106B8102}" {
+                 Name "RichText0"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 2
+                  VerticalAlign 1
+                  Padding 0 0 6 0
+                 }
+                 Color 0 0 0 1
+                 Text "FREEZE TIME"
+                 "Font Size" 22
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+          SizeLayoutWidgetClass "{6920E023106B8103}" {
+           Name "groupTimer"
+           Slot LayoutSlot "{6920E0258CE7568B}" {
+            HorizontalAlign 2
+            VerticalAlign 1
+           }
+           AllowWidthOverride 1
+           WidthOverride 80
+           {
+            OverlayWidgetClass "{6920E023106B1D39}" {
+             Name "over1"
+             Slot AlignableSlot "{6920E0265A07A23B}" {
+              HorizontalAlign 3
+              VerticalAlign 3
+             }
+             {
+              SmartPanelWidgetClass "{6920E023106B1D3E}" {
+               Name "bgSmart"
+               Slot OverlayWidgetSlot "{6920E026251EB1C6}" {
+                HorizontalAlign 3
+                VerticalAlign 3
+               }
+               Opacity 0.4
+               Color 0 0 0 1
+               style rounded_4px
+              }
+              HorizontalLayoutWidgetClass "{6920E023106B36B7}" {
+               Name "HorizontalLayout0"
+               Slot OverlayWidgetSlot "{6920E026E706DB9B}" {
+               }
+               {
+                ImageWidgetClass "{6920E023106B36B6}" {
+                 Name "Image0"
+                 Slot LayoutSlot "{6920E026D04286C6}" {
+                 }
+                 Texture "{D17288006833490F}UI/Textures/Icons/icons_wrapperUI-32.imageset"
+                 Image "time"
+                 Size 28 28
+                }
+                RichTextWidgetClass "{6920E023106CDF5F}" {
+                 Name "RichText0"
+                 Slot LayoutSlot "{6920E026D43779DA}" {
+                  HorizontalAlign 2
+                  VerticalAlign 1
+                  Padding 0 0 6 0
+                 }
+                 Text "00:00"
+                 "Font Size" 16
+                 "Min Font Size" 1
+                 "Horizontal Alignment" Right
+                 "Vertical Alignment" Center
+                 FontProperties FontProperties "{6920E0272DD35FA8}" {
+                  Font "{3E7733BAC8C831F6}UI/Fonts/RobotoCondensed/RobotoCondensed_Regular.fnt"
+                 }
+                }
+               }
+              }
+             }
+            }
+           }
+          }
+         }
+        }
+        HorizontalLayoutWidgetClass "{6920E023106C88E3}" {
+         Name "content"
+         Slot LayoutSlot "{6920E0252C1AF754}" {
+          HorizontalAlign 1
+          VerticalAlign 1
+          Padding 0 10 0 0
+         }
+         {
+          RichTextWidgetClass "{6920E023106C88E0}" {
+           Name "RichText0"
+           Slot LayoutSlot "{6920E026A50303D5}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+           }
+           Color 0 0 0 1
+           Text "Todos liberados. Sigam para o objetivo."
+           "Font Size" 16
+           "Min Font Size" 1
+          }
+         }
+        }
+       }
+      }
+      OverlayWidgetClass "{6920E023106CA204}" {
+       Name "progressBarGroup"
+       Slot OverlayWidgetSlot "{6920E02310690D37}" {
+        HorizontalAlign 0
+        VerticalAlign 2
+       }
+       {
+        ImageWidgetClass "{6920E023106CA205}" {
+         Name "progressBar"
+         Slot OverlayWidgetSlot "{6920E0222D5B2EC7}" {
+          HorizontalAlign 0
+          VerticalAlign 3
+          Padding 0 0 0 0
+         }
+         Color 0.0935 1 0.0024 1
+         Size 550 5
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}
