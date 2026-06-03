@@ -160,7 +160,7 @@ FrameWidgetClass {
                   Padding 0 0 6 0
                  }
                  Color 0 0 0 1
-                 Text "FREEZE TIME"
+                 Text "#SAS-Freezetime_Title"
                  "Min Font Size" 1
                  "Horizontal Alignment" Right
                  "Vertical Alignment" Center
@@ -256,9 +256,9 @@ FrameWidgetClass {
             VerticalAlign 1
            }
            Color 0 0 0 1
-           Text "Momento de preparação e organização dos times. Mantenha-se na MAIN BASE."
-           "Font Size" 16
-           "Min Font Size" 1
+           Text "#SAS-Freezetime_Description"
+           "Font Size" 18
+           "Min Font Size" 10
           }
          }
         }
@@ -445,7 +445,7 @@ FrameWidgetClass {
                   Padding 0 0 6 0
                  }
                  Color 0 0 0 1
-                 Text "FREEZE TIME"
+                 Text "#SAS-Freezetime_Title"
                  "Font Size" 22
                  "Min Font Size" 1
                  "Horizontal Alignment" Right
@@ -538,7 +538,7 @@ FrameWidgetClass {
             VerticalAlign 1
            }
            Color 0 0 0 1
-           Text "Todos liberados. Sigam para o objetivo."
+           Text "#SAS-Freezetime_EndDescription"
            "Font Size" 16
            "Min Font Size" 1
           }

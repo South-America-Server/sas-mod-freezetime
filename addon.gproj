@@ -7,6 +7,67 @@ GameProject {
  }
  Configurations {
   GameProjectConfig PC {
+   WidgetManagerSettings WidgetManagerSettings "{AC4BE58770485E03}" {
+    StringTables {
+     StringTableDefinition "{69861ACEAFDD9BA3}" {
+      StringTableSource "{7A2F15C70472FB1A}Language/sas_mod_freezetime_localization.st"
+      Languages {
+       LanguageDefinition "{69861ACEADB21996}" {
+        Code "cs_cz"
+        StringTableRuntime "{CC39E0E89A5C3862}Language/sas_mod_freezetime_localization.cs_cz.conf"
+       }
+       LanguageDefinition "{69861ACEADB21963}" {
+        Code "de_de"
+        StringTableRuntime "{1947FADB89FF2942}Language/sas_mod_freezetime_localization.de_de.conf"
+       }
+       LanguageDefinition "{69861ACEADB21957}" {
+        Code "en_us"
+        StringTableRuntime "{47B77090E30C2C43}Language/sas_mod_freezetime_localization.en_us.conf"
+       }
+       LanguageDefinition "{69861ACEADB21946}" {
+        Code "es_es"
+        StringTableRuntime "{82FB3D190D0E475C}Language/sas_mod_freezetime_localization.es_es.conf"
+       }
+       LanguageDefinition "{69861ACEADB21936}" {
+        Code "fr_fr"
+        StringTableRuntime "{3953C82EEB8DA45E}Language/sas_mod_freezetime_localization.fr_fr.conf"
+       }
+       LanguageDefinition "{69861ACEADB21927}" {
+        Code "it_it"
+        StringTableRuntime "{B94F471A46AF27A7}Language/sas_mod_freezetime_localization.it_it.conf"
+       }
+       LanguageDefinition "{69861ACEADB21918}" {
+        Code "ja_jp"
+        StringTableRuntime "{A954FA8878DE170C}Language/sas_mod_freezetime_localization.ja_jp.conf"
+       }
+       LanguageDefinition "{69861ACEADB21909}" {
+        Code "ko_kr"
+        StringTableRuntime "{09EAD224EBF31433}Language/sas_mod_freezetime_localization.ko_kr.conf"
+       }
+       LanguageDefinition "{69861ACEADB218F0}" {
+        Code "pl_pl"
+        StringTableRuntime "{559B74DE551C884F}Language/sas_mod_freezetime_localization.pl_pl.conf"
+       }
+       LanguageDefinition "{69861ACEADB218EA}" {
+        Code "pt_br"
+        StringTableRuntime "{80ECEE126EE242F5}Language/sas_mod_freezetime_localization.pt_br.conf"
+       }
+       LanguageDefinition "{69861ACEADB2189D}" {
+        Code "ru_ru"
+        StringTableRuntime "{D5ADFABAF39B2783}Language/sas_mod_freezetime_localization.ru_ru.conf"
+       }
+       LanguageDefinition "{69861ACEADB21875}" {
+        Code "uk_ua"
+        StringTableRuntime "{5FF5AF4C9FB599D6}Language/sas_mod_freezetime_localization.uk_ua.conf"
+       }
+       LanguageDefinition "{69861ACEADB21866}" {
+        Code "zh_cn"
+        StringTableRuntime "{8545C171A61549CB}Language/sas_mod_freezetime_localization.zh_cn.conf"
+       }
+      }
+     }
+    }
+   }
   }
   GameProjectConfig XBOX_ONE {
   }
