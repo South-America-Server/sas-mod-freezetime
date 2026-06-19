@@ -45,7 +45,10 @@ class SAS_FreezetimeConfig
 		if (!s_Instance)
 		{
 			s_Instance = new SAS_FreezetimeConfig();
-			s_Instance.Load(PROFILE_CONFIG_PATH);
+			if (Replication.IsServer())
+			{
+				s_Instance.Load(PROFILE_CONFIG_PATH);
+			}
 		}
 		return s_Instance;
 	}
